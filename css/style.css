@@ -27,12 +27,9 @@
     Info Section
 ============================ */
 
-.info-section {
+.info-border {
   text-align: center;
   padding: 10px 0;
-}
-
-.info-section .container {
   border-bottom: solid;
 }
 
@@ -40,10 +37,6 @@
 /* ============================
     Form Section
 ============================ */
-
-.checkbox {
-
-}
 
 button {
   width: 100%;
@@ -101,6 +94,11 @@ select {
 textarea {
   width: 100%;
   margin-bottom: 1em;
+}
+
+.form-contact {
+  padding-bottom: 30px;
+  border-bottom: solid;
 }
 
 /* ============================
