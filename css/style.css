@@ -50,6 +50,14 @@ input {
   width: 5%;
 }
 
+button {
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
 /* ============================
     Media Queries
 ============================ */
