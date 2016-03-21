@@ -24,19 +24,30 @@
     <div class="container">
       <div class="form-contact">
         <h2>Contact Information</h2>
-        <form>
-          <label for="fullname">Full Name</label>
-          <input type="text" name="fullname">
-          <label for="email_address">Email Address</label>
-          <input type="text" name="email_address">
-          <label for="phone_number">Phone Number</label>
-          <input type="tel" name="phone_number">
-          <label for="street_address">Street Address</label>
-          <input type="text" name="street_address">
-          <label for="city">City</label>
-          <input type="text" name="city">
-          <label for="state">State</label>
-          <select>
+        <form action="/my-handling-form-page" method="post">
+          <div class="item">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname">
+          </div>
+          <div class="item">
+            <label for="email_address">Email Address</label>
+            <input type="text" name="email_address">
+          </div>
+          <div class="item">
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number">
+          </div>
+          <div class="item">
+            <label for="street_address">Street Address</label>
+            <input type="text" name="street_address">
+          </div>
+          <div class="item">
+            <label for="city">City</label>
+            <input type="text" name="city">
+          </div>
+          <div class="item">
+            <label for="state">State</label>
+            <select>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -89,25 +100,36 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>	
-          <label for="zipcode">Zip Code</label>
-          <input type="text" name="zip_code">
+          </div>
+          <div class="item">
+            <label for="zipcode">Zip Code</label>
+            <input id="zipcode" type="text" name="zip_code">
+          </div>
           <h2>Newsletter</h2>
           <p>Select the newsletters you would like to receive</p>
-          <input class="checkbox" type="checkbox" name="newsletter" value="html-news" checked="checked">
-          <label for="html_news">HTML News</label>
-          <input class="checkbox" type="checkbox" name="newsletter" value="css-news">
-          <label for="css_news">CSS News</label>
-          <input class="checkbox" type="checkbox" name="newsletter" value="js-news">
-          <label for="javascript_news">Javascript News</label>
+          <div class="block">
+            <input class="checkbox" type="checkbox" name="newsletter" value="html-news" checked="checked">
+            <label class="radio-label" for="html_news">HTML News</label>
+          </div>
+          <div class="block">
+            <input class="checkbox" type="checkbox" name="newsletter" value="css-news">
+            <label class="radio-label" for="css_news">CSS News</label>
+          </div>
+          <div class="block">
+            <input class="checkbox" type="checkbox" name="newsletter" value="js-news">
+            <label class="radio-label" for="javascript_news">Javascript News</label>
+          </div>
           <p>Newsletter format</p>
-          <input class="checkbox" type="radio" name="newsletter-format" value="html-format" checked="checked">
-          <label for="HTML">HTML</label>
-          <input class="checkbox" type="radio" name="newsletter-format" value="plaintext-format" checked="checked">
-          <label for="plain_text">Plain text</label>
+          <div class="block">
+            <input class="checkbox" type="radio" name="newsletter-format" value="html-format" checked="checked">
+            <label class="radio-label" for="HTML">HTML</label>
+          </div>
+          <div class="block">
+            <input class="checkbox" type="radio" name="newsletter-format" value="plaintext-format">
+            <label class="radio-label" for="plain_text">Plain text</label>
+          </div>
           <p>Other topics you'd like to hear about</p>
-          <textarea rows="3" cols="">
-            Type it here
-          </textarea>
+          <textarea rows="4" cols=""></textarea>
           <button type="button">Sign Up</button>
         </form>
       </div>

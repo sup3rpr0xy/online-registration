@@ -41,22 +41,77 @@
     Form Section
 ============================ */
 
-input {
-  height: 1.75em;
-  width: 100%
-}
-
 .checkbox {
-  width: 5%;
+
 }
 
 button {
   width: 100%;
 }
 
+
+/* ============================
+    Form Section
+============================ */
+
+form {
+  margin: 0 auto;
+  
+}
+
+.item {
+  display: block;
+}
+
+
+label {
+  display: block;
+  text-align: left;
+  
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: .3em;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+select {
+  width: 100%;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+.block .checkbox {
+  display: inline-block;
+  width: 5%;
+}
+
+.radio-label {
+  display: inline-block;
+  width: 50%;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* ============================
+    Footer Section
+============================ */
+
 .footer {
   text-align: center;
+  margin: 2em;
 }
+
 
 /* ============================
     Media Queries
