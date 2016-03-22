@@ -3,6 +3,7 @@
 <head>
   <title>Online Registration</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -27,29 +28,30 @@
       <form action="/my-handling-form-page" method="post">
         <div class="form-contact">
           <h2>Contact Information</h2>
-          <div class="item">
+          <div class="item flex-container">
             <label for="fullname">Full Name</label>
             <input type="text" name="fullname">
           </div>
-          <div class="item">
+          <div class="item flex-container">
             <label for="email_address">Email Address</label>
             <input type="text" name="email_address">
           </div>
-          <div class="item">
+          <div class="item flex-container">
             <label for="phone_number">Phone Number</label>
             <input type="tel" name="phone_number">
           </div>
-          <div class="item">
+          <div class="item flex-container">
             <label for="street_address">Street Address</label>
             <input type="text" name="street_address">
           </div>
-          <div class="item">
+          <div class="item flex-container">
             <label for="city">City</label>
             <input type="text" name="city">
           </div>
-          <div class="item">
+          <div class="item flex-container">
             <label for="state">State</label>
             <select>
+            <option value="None">Choose State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -103,40 +105,45 @@
             <option value="WY">Wyoming</option>
           </select>	
           </div>
-          <div class="item">
+          <div class="item flex-container">
             <label for="zipcode">Zip Code</label>
             <input id="zipcode" type="text" name="zip_code">
           </div>
         </div>
           <h2>Newsletter</h2>
           <p>Select the newsletters you would like to receive</p>
+        
+          <!-- CHECKBOXES -->
           <div class="block">
-            <input class="checkbox" type="checkbox" name="newsletter" value="html-news" checked="checked">
-            <label class="radio-label" for="html_news">HTML News</label>
+            <input id="html-news" class="checkbox" type="checkbox" name="newsletter" value="html-news" checked="checked">
+            <label class="radio-label" for="html-news"><span><span></span></span>HTML News</label>
           </div>
           <div class="block">
-            <input class="checkbox" type="checkbox" name="newsletter" value="css-news">
-            <label class="radio-label" for="css_news">CSS News</label>
+            <input id="css-news" class="checkbox" type="checkbox" name="newsletter" value="css-news">
+            <label class="radio-label" for="css-news"><span><span></span></span>CSS News</label>
           </div>
           <div class="block">
-            <input class="checkbox" type="checkbox" name="newsletter" value="js-news">
-            <label class="radio-label" for="javascript_news">Javascript News</label>
+            <input id="javascript-news" class="checkbox" type="checkbox" name="newsletter" value="js-news">
+            <label class="radio-label" for="javascript-news"><span><span></span></span>Javascript News</label>
           </div>
+        
           <p>Newsletter format</p>
+        
+          <!-- RADIO BUTTONS -->
           <div class="block">
-            <input class="checkbox" type="radio" name="newsletter-format" value="html-format" checked="checked">
-            <label class="radio-label" for="HTML">HTML</label>
+            <input id="HTML" class="checkbox" type="radio" name="newsletter-format" value="html-format" checked="checked">
+            <label class="radio-label" for="HTML"><span><span></span></span>HTML</label>
           </div>
           <div class="block">
-            <input class="checkbox" type="radio" name="newsletter-format" value="plaintext-format">
-            <label class="radio-label" for="plain_text">Plain text</label>
+            <input id="plain-text" class="checkbox" type="radio" name="newsletter-format" value="plaintext-format">
+            <label class="radio-label" for="plain-text"><span><span></span></span>Plain text</label>
           </div>
+        
+          <!-- TEXTBOX -->
           <p>Other topics you'd like to hear about</p>
-          <textarea rows="4" cols=""></textarea>
+          <textarea rows="5" cols=""></textarea>
           <button type="button">Sign Up</button>
         </form>
-
-
     </div>
   </div>
   
