@@ -148,19 +148,20 @@ select {
 
   .flex-container {
     display: flex;
-  }
-
-  label {
-    display: inline-block;
-    text-align: left;
-    width: 30%;
+    align-content: flex-start;
+    justify-content: flex-start;
   }
   
-  .item input, 
-  select {
-    display: inline-block;
+  .flex-item1 {
+    width: 30%;
+    align-self: center;
+    flex-grow: 1;
+  }
+  
+  .flex-item2 {
     width: 100%;
   }
+  
   
 }
 
