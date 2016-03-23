@@ -98,6 +98,7 @@ select {
   width: 50%;
 }
 
+
 .block .checkbox {
   display: inline-block;
   width: 5%;
@@ -148,20 +149,26 @@ select {
 
   .flex-container {
     display: flex;
+    width: 100%;
     align-content: flex-start;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   
   .flex-item1 {
-    width: 30%;
-    align-self: center;
-    flex-grow: 1;
+    flex: 1;
   }
   
   .flex-item2 {
-    width: 100%;
+    flex: 2;
+    align-self: flex-start;
   }
   
+  #zipcode {
+    width: auto;
+    text-align: left;
+  }
   
 }
 
