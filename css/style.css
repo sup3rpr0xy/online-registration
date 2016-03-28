@@ -20,6 +20,10 @@ fieldset {
   border: 0;
 }
 
+legend {
+  display: none;
+}
+
 
 /* ============================
     Header
@@ -182,6 +186,9 @@ textarea:focus {
   
 @media (min-width: 1200px) {
 
-  
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
     
 }

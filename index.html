@@ -27,31 +27,32 @@
     <div class="container">
       <form action="/my-handling-form-page" method="post">
         <fieldset>
+          <legend>Contact Information</legend>
           <div class="form-contact">
-            <h2><legend>Contact Information</legend></h2>
+            <h2>Contact Information</h2>
             <div class="item flex-container">
               <label class="flex-item1" for="fullname">Full Name</label>
-              <input class="flex-item2" type="text" name="fullname" required>
+              <input class="flex-item2" type="text" id="fullname" required>
             </div>
             <div class="item flex-container">
               <label class="flex-item1" for="email_address">Email Address</label>
-              <input class="flex-item2" type="text" name="email_address" required>
+              <input class="flex-item2" type="text" id="email_address" required>
             </div>
             <div class="item flex-container">
               <label class="flex-item1" for="phone_number">Phone Number</label>
-              <input class="flex-item2" type="tel" name="phone_number" required>
+              <input class="flex-item2" type="tel" id="phone_number" required>
             </div>
             <div class="item flex-container">
               <label class="flex-item1" for="street_address">Street Address</label>
-              <input class="flex-item2" type="text" name="street_address" required>
+              <input class="flex-item2" type="text" id="street_address" required>
             </div>
             <div class="item flex-container">
               <label class="flex-item1" for="city">City</label>
-              <input class="flex-item2" type="text" name="city" required>
+              <input class="flex-item2" type="text" id="city" required>
             </div>
             <div class="item flex-container">
               <label class="flex-item1" for="state">State</label>
-              <select class="flex-item2" required>
+              <select class="flex-item2" id="state">
               <option value="None">Choose State</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -108,7 +109,7 @@
             </div>
             <div class="item flex-container">
               <label class="flex-item1" for="country">Country</label>
-              <select class="flex-item2" name="country">
+              <select class="flex-item2" id="country">
                 <option value="">Choose Country</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -367,7 +368,8 @@
         </fieldset>
         
         <fieldset>
-          <h2><legend>Newsletter</legend></h2>
+          <legend>Newsletter</legend>
+          <h2>Newsletter</h2>
           <p>Select the newsletters you would like to receive</p>
         
           <!-- CHECKBOXES -->
@@ -398,7 +400,7 @@
         
           <!-- TEXTBOX -->
           <p>Other topics you'd like to hear about</p>
-          <textarea rows="5" cols="" placeholder="Ex. Web Design, AngularJS, iOS programming"></textarea>
+          <textarea rows="5" placeholder="Ex. Web Design, AngularJS, iOS programming"></textarea>
           <button type="submit"><span class="signup-button">Sign Up</span></button>
         </fieldset>
       </form>
