@@ -120,17 +120,18 @@ select {
   border-bottom: solid;
 }
 
-input:focus,
-textarea:focus {
-  background-color: lightgreen;
+.signup-button {
+  font-size: 1.5em;
 }
 
-
 /* ============================
-    Radio & Checkboxes
+    Animation
 ============================ */
 
-
+input:focus,
+textarea:focus {
+  background-color: lightcyan;
+}
 
 
 /* ============================
@@ -147,12 +148,7 @@ textarea:focus {
     Media Queries
 ============================ */
 
-@media (min-width: 769px) { /* Treehouse suggests 769px instead of 600px */
-  
-  html {
-    background-color: red;
-  }
-  
+@media (min-width: 760px) { /* Treehouse suggests 769px instead of 600px */
   
   .container {
     width: 70%;
@@ -186,8 +182,6 @@ textarea:focus {
   
 @media (min-width: 1200px) {
 
-  html {
-    background-color: green;
-  }
+  
     
 }
