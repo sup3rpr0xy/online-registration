@@ -16,14 +16,21 @@ html {
 
 fieldset {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   border: 0;
 }
 
-legend {
-  display: none;
+.fieldset-contact-information {
+  border-bottom: solid;
+  padding-bottom: 30px;
 }
 
+legend {
+/*  display: none;*/
+  font-size: 1.50em;
+  font-weight: 700;
+  padding-top: 25px;
+}
 
 /* ============================
     Header
@@ -32,7 +39,7 @@ legend {
 .header { 
   text-align: center;
   padding: 1px 10px;
-  background: grey;
+  background-color: darkcyan;
   color: white;
   text-transform: uppercase;
 }
@@ -120,8 +127,10 @@ select {
 }
 
 .form-contact {
+/*
   padding-bottom: 30px;
   border-bottom: solid;
+*/
 }
 
 .signup-button {
