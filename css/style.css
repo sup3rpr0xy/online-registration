@@ -26,7 +26,6 @@ fieldset {
 }
 
 legend {
-/*  display: none;*/
   font-size: 1.50em;
   font-weight: 700;
   padding-top: 25px;
@@ -191,7 +190,6 @@ textarea:focus {
   }
   
 }
-
   
 @media (min-width: 1200px) {
 
